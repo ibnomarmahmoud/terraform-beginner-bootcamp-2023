@@ -245,3 +245,38 @@ If you lose this file, you lose knowning the state of your infrastructure.
 ### Terraform Directory
 
 `.terraform` directory contains binaries of terraform providers.
+
+## S3 Creation using Terraform AWS Provider
+
+After setting the random bucket name to follow the naming rules of S3 , bucket was created succesfully 
+
+```
+Plan: 2 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + random_bucket_name = (known after apply)
+random_string.bucket_name: Creating...
+random_string.bucket_name: Creation complete after 0s [id=18ex3b8zvrxcxu0xvv5r1yrhnix6]
+aws_s3_bucket.example: Creating...
+aws_s3_bucket.example: Still creating... [10s elapsed]
+aws_s3_bucket.example: Creation complete after 19s [id=18ex3b8zvrxcxu0xvv5r1yrhnix6]
+
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+random_bucket_name = "18ex3b8zvrxcxu0xvv5r1yrhnix6"
+gitpod /workspace/terraform-beginner-bootcamp-2023 (9-create-an-s3-bucket-using-the-random-bucket-name) $ aws s3 ls
+2023-09-27 13:00:56 18ex3b8zvrxcxu0xvv5r1yrhnix6
+2023-04-25 12:04:30 artifacts-cruddur
+2023-04-10 12:49:33 assets.eg-cruddur.online
+2023-08-28 13:00:17 aws-cloudtrail-logs-868130657006-19929519
+2023-08-28 12:58:14 aws-cloudtrail-logs-868130657006-c96139ed
+2023-08-28 12:59:39 aws-cloudtrail-logs-868130657006-ed0a06e0
+2023-04-10 12:45:03 cdk-hnb659fds-assets-868130657006-us-west-2
+2023-04-17 12:47:49 codepipeline-us-west-2-453719058403
+2023-07-29 05:12:13 config-bucket-868130657006
+2023-09-26 07:21:03 terraformtown-mahmoud
+gitpod /workspace/terraform-beginner-bootcamp-2023 (9-create-an-s3-bucket-using-the-random-bucket-name) $ 
+
+```
