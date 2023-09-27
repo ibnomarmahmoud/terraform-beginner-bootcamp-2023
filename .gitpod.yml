@@ -2,6 +2,7 @@ tasks:
   - name: terraform
     before: |
       cd $PROJECT_ROOT
+      ./bin/tf_alias
       ./bin/terraform-install
       ./bin/generate_tf_credentials
   - name: aws-cli
