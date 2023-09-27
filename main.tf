@@ -1,6 +1,14 @@
 
 terraform {
-  required_providers {
+  
+  cloud {
+    organization = "TerraTown-Mahmoud-2023"
+    workspaces {
+      name = "TerraTown-1"
+    }
+  
+    }
+    required_providers {
     random = {
       source = "hashicorp/random"
       version = "3.5.1"
