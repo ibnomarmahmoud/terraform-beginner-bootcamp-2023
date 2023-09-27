@@ -280,3 +280,7 @@ gitpod /workspace/terraform-beginner-bootcamp-2023 (9-create-an-s3-bucket-using-
 gitpod /workspace/terraform-beginner-bootcamp-2023 (9-create-an-s3-bucket-using-the-random-bucket-name) $ 
 
 ```
+
+## TF State upload to cloud
+
+![Alt text](assets/TF_Cloud.png)
