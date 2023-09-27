@@ -1,15 +1,14 @@
 tasks:
   - name: terraform
     before: |
-      /workspace/terraform-beginner-bootcamp-2023/bin/terraform-install
+      cd $PROJECT_ROOT
+      ./bin/terraform-install
   - name: aws-cli
     env:
       AWS_CLI_AUTO_PROMPT: on-partial
     before: |
-      cd /workspace
-      curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-      unzip awscliv2.zip
-      sudo ./aws/install
+      cd $PROJECT_ROOT
+      ./bin/aws-install
       cd $THEIA_WORKSPACE_ROOT
 vscode:
   extensions:
