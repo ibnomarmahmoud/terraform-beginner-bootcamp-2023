@@ -17,3 +17,4 @@ vscode:
     - amazonwebservices.aws-toolkit-vscode
     - hashicorp.terraform
     - mcright.auto-save
+    - yzhang.markdown-all-in-one

@@ -9,3 +9,5 @@
 ## Extra
 
 The ToC was created by easy-to-use extension called Markdown All in One that can make the TOC for any .md file in an instant.
+yzhang.markdown-all-in-one
+
