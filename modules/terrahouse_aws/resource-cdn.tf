@@ -13,6 +13,10 @@ locals {
   s3_origin_id = "MyS3Origin"
 }
 
+resource "terraform_data" "content_version" {
+  input = var.content_version
+}
+
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudfront_distribution
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
