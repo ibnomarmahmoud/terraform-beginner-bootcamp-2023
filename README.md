@@ -6,6 +6,9 @@
 ## Week1
 [Week1](journals/week1.md)
 
+## Week2
+[Week1](journals/week2.md)
+
 ## Extra
 
 The ToC was created by easy-to-use extension called Markdown All in One that can make the TOC for any .md file in an instant.
