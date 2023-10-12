@@ -39,13 +39,16 @@ module "terrahouse_aws" {
 }
 
 resource "terratowns_home" "home_mahmoud1" {
-  name = "Terraform"
+  name = "Egyptain Tasty Koshery"
   description = <<DESCRIPTION
-Terraform is an infrastructure-as-code software tool created by HashiCorp. 
-Users define and provide data center infrastructure using a declarative configuration language known as HashiCorp Configuration Language (HCL), or optionally JSON
+Koshary, kushari or koshari (Egyptian Arabic: كشرى [ˈkoʃæɾi]) is Egypt's national dish 
+and a widely popular street food.
+It is a traditional Egyptian staple, mixing pasta, Egyptian fried rice, vermicelli and brown lentils,
+and topped with a zesty tomato sauce, garlic vinegar and garnished with chickpeas and crispy fried onions.
+It is often served with sprinklings of garlic juice; garlic vinegar and hot sauce are optional.
 DESCRIPTION
   domain_name = module.terrahouse_aws.cloudfront_url
   #domain_name = "3fdq3gz1.cloudfront.net"
-  town = "missingo"
+  town = "cooker-cove"
   content_version = 1
 }
