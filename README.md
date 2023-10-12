@@ -2,10 +2,10 @@
 
 # Final Outcome 
 
-This was deployed in https://terratowns.cloud/t/cooker-cove and can be accessed from https://terratowns.cloud/h/092e3a20-87b3-4551-92a8-a64c66cdbcbb
+This was deployed in [Cooker-Cove](https://terratowns.cloud/t/cooker-cove) and can be accessed from [My Final Submission](https://terratowns.cloud/h/092e3a20-87b3-4551-92a8-a64c66cdbcbb)
 
-![Cooker Cove](image-1.png)
-![My Town](image.png)
+![Cooker Cove](./assets/image-1.png)
+![My Town](./assets/image2.png)
 
 
 

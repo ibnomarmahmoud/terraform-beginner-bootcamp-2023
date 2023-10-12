@@ -2,10 +2,11 @@ tasks:
   - name: terraform
     before: |
       cd $PROJECT_ROOT
-      ./bin/tf_alias
+      source ./bin/tf_alias
       ./bin/terraform-install
       ./bin/generate_tf_credentials
       cd /workspace/terraform-beginner-bootcamp-2023 ; cp terraform.tfvars.example terraform.tfvars
+      source ./bin/build_provider
   - name: sinatra
     before: | 
       cd $PROJECT_ROOT
@@ -27,3 +28,4 @@ vscode:
     - yzhang.markdown-all-in-one
     - mhutchie.git-graph
     - phil294.git-log--graph
+    - golang.go
